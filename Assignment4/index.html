@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjul Yadav - B.Tech IT Resume</title>
+    <style>
+        /* Basic Styles & Typography */
+        :root {
+            --primary-color: #007BFF;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2, h3, h4 {
+            color: #212529;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-top: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Layout & Components */
+        .header {
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .entry {
+            margin-bottom: 20px;
+        }
+
+        .entry p, .entry ul {
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+
+        .entry ul {
+            padding-left: 20px;
+        }
+
+        .project-details {
+            font-style: italic;
+            color: #6c757d;
+        }
+
+        /* Skills Section Specific Styles */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill-category {
+            flex: 1 1 45%; /* Allows two columns on wider screens */
+        }
+
+        .skill-category h4 {
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header {
+                text-align: left;
+            }
+
+            .skills-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Manjul Yadav</h1>
+        <p>B.Tech | Information Technology</p>
+        <div class="contact-info">
+            <a href="mailto:youremail@example.com">youremail@example.com</a> |
+            <a href="tel:+911234567890">+91 1234567890</a> |
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Summary</h2>
+            <p>A highly motivated and passionate B.Tech student in Information Technology with a strong foundation in programming languages like C++, Java, and Python. Eager to apply technical skills in software development, web technologies, and database management to contribute to innovative projects.</p>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="entry">
+                <h3>B.Tech in Information Technology</h3>
+                <p><strong>Your University/College Name</strong> | Expected Graduation: 2026</p>
+                <p>CGPA: 8.5/10.0</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-category">
+                    <h4>Programming Languages:</h4>
+                    <p>C++, Python, Java, JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Web Technologies:</h4>
+                    <p>HTML5, CSS3, React.js, Node.js</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Databases:</h4>
+                    <p>MySQL, MongoDB</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Platforms:</h4>
+                    <p>Git, VS Code, Docker, AWS (Basics)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="entry">
+                <h3>Project Title 1</h3>
+                <p class="project-details">A brief description of your project and the technologies used (e.g., A web application for a simple e-commerce store built with React and Node.js).</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="entry">
+                <h3>Project Title 2</h3>
+                <p class="project-details">A brief description of your second project and the technologies used (e.g., A data analysis tool developed using Python and pandas).</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Internships / Experience</h2>
+            <div class="entry">
+                <h3>Internship Title</h3>
+                <p><strong>Company Name</strong> | City, State | Month Year - Month Year</p>
+                <ul>
+                    <li>Developed and maintained features for a web application using X and Y technologies.</li>
+                    <li>Collaborated with a team of developers to debug and optimize existing code.</li>
+                    <li>Contributed to the design of new software modules and APIs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Awards & Achievements</h2>
+            <div class="entry">
+                <h3>Achievement/Award Name</h3>
+                <p>Awarded for [brief description of achievement], such as a coding competition or hackathon.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Certifications</h2>
+            <div class="entry">
+                <h3>Certification Name</h3>
+                <p>From [Issuing Organization] | Year</p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="square-box">
+        <button id="showBtn">Click Me</button>
+        <div id="message">hello</div>
+    </div>
+    <div style="text-align:center; margin-top:30px;">
+        <button class="color-btn" style="background:red; color:white;" id="redBtn">Red</button>
+        <button class="color-btn" style="background:blue; color:white;" id="blueBtn">Blue</button>
+        <button class="color-btn" style="background:green; color:white;" id="greenBtn">Green</button>
+    </div>
+    <style>
+        .square-box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+        }
+        #message {
+            margin-top: 15px;
+            color: #007bff;
+            font-weight: bold;
+            display: none;
+        }
+        .color-btn {
+            width: 80px;
+            height: 40px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.getElementById('showBtn').onclick = function() {
+            document.getElementById('message').style.display = 'block';
+        };
+        document.getElementById('redBtn').onclick = function() {
+            document.body.style.background = 'red';
+        };
+        document.getElementById('blueBtn').onclick = function() {
+            document.body.style.background = 'blue';
+        };
+        document.getElementById('greenBtn').onclick = function() {
+            document.body.style.background = 'green';
+        };
+    </script>
+</body>
+</html>
+</body>
+</html>
